@@ -1,0 +1,19 @@
+.feedback-item {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  .feedback-image {
+    img {
+      border-radius: 12px;
+    }
+  }
+
+  .feedback-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

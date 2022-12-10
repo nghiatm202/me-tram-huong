@@ -1,0 +1,21 @@
+.feedback-slider-container {
+  margin-bottom: 60px;
+}
+
+.slick-track {
+  display: flex;
+  gap: 12px;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #b3b2b2;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}

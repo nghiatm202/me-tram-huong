@@ -1,0 +1,20 @@
+@import './container';
+
+@import './font';
+@import './color';
+@import './reset';
+
+// load all component style
+@import '../components/agarwood-product-item/style.scss';
+@import '../components/not-found/style.scss';
+@import '../components/feedback-slider/style.scss';
+@import '../components/feedback-slider/feedback-item/style.scss';
+
+// load all pages style
+@import '../pages/home/style.scss';
+@import '../pages/checkout/style.scss';
+
+// load all layouts style
+@import '../layouts/header/style.scss';
+@import '../layouts/footer/style.scss';
+@import '../layouts/main/style.scss';
