@@ -1,0 +1,22 @@
+input[type='radio'] {
+  accent-color: #008000e1;
+
+  &:hover {
+    accent-color: #0f980fe1;
+  }
+}
+
+.radio-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    width: 20px;
+    height: 20px;
+  }
+}

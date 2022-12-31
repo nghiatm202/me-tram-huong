@@ -31,7 +31,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '2',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li Trầm hương tự nhiên Việt Nam dạng trúc thô 12li Trầm hương tự nhiên Việt Nam dạng trúc thô 12li Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -39,7 +39,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '3',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -47,7 +47,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '4',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -55,7 +55,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '5',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -63,7 +63,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '6',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -71,7 +71,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '7',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -79,7 +79,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '8',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -87,7 +87,7 @@ const agarwoodProductList = [
     price: '1.500.000 VNĐ',
   },
   {
-    id: '1',
+    id: '9',
     name: 'Trầm hương tự nhiên Việt Nam dạng trúc thô 12li',
     image:
       'https://metramhuong.vn/upload/image/product/Vong/chuoi%20108%20216/Chu%E1%BB%97i%20108%207lii%201.jpg',
@@ -185,7 +185,7 @@ function Home() {
             {agarwoodProductList.map(item => {
               return (
                 <AgarwoodProductItem
-                  key={item.name}
+                  key={item.id}
                   price={item.price}
                   name={item.name}
                   image={item.image}
@@ -196,13 +196,13 @@ function Home() {
           </div>
         </section>
       </div>
-      <section class="agarwood-intro">
+      <section className="agarwood-intro">
         <div className="container">
           <div className="agarwood-intro-container">
             <div className="agarwood-intro-content">
               <p className="sub-heading">Giới thiệu về</p>
               <p className="heading">Mê Trầm Hương</p>
-              <div class="description">
+              <div className="description">
                 <p>
                   Mê Trầm Hương hiểu rất rõ băn khoăn của các anh chị mới tiếp
                   xúc với trầm, cũng như chính Mê Trầm Hương đã từng khó khăn

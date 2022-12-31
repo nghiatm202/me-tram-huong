@@ -1,0 +1,218 @@
+.order {
+  &-container {
+    --order-spacing: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--order-spacing));
+  }
+
+  &-page {
+    background-color: #fff;
+    padding: 35px 0;
+
+    .my-order {
+      padding: 24px 30px 30px;
+      border: 1px solid #e1e1e1;
+      border-radius: 4px;
+      width: calc(40% - var(--order-spacing));
+      margin-left: var(--order-spacing);
+
+      &-title {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e1e1e1;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        color: #151515;
+        text-transform: uppercase;
+      }
+
+      .products {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 20px;
+
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #151515;
+          padding-bottom: 8px;
+        }
+
+        .product-item {
+          display: flex;
+          flex-direction: column;
+          color: #666;
+
+          .amount {
+            font-weight: 700;
+            color: #151515;
+            padding-left: 8px;
+          }
+
+          .price span {
+            font-weight: 700;
+          }
+        }
+      }
+
+      .total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e1e1e1;
+
+        span {
+          font-weight: 700;
+          color: #151515;
+        }
+      }
+
+      .final-total-box {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 20px;
+
+        .transport-fee,
+        .discount,
+        .final-total {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .transport-fee,
+        .discount {
+          color: #666;
+        }
+
+        .final-total {
+          .title {
+            color: #151515;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 700;
+          }
+
+          .price {
+            color: #338dbc;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+          }
+        }
+      }
+
+      .payment-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: #666;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e1e1e1;
+        margin-bottom: 20px;
+
+        .title {
+          font-weight: 600;
+          color: #151515;
+        }
+      }
+
+      .terms-condition {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        input {
+          cursor: pointer;
+        }
+
+        label {
+          cursor: pointer;
+          color: #666;
+        }
+      }
+
+      .order-btn {
+        display: block;
+        width: 100%;
+        color: #fff;
+        background-color: #333;
+        transition: opacity 0.3s;
+        border-radius: 4px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 12px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  &-details {
+    display: flex;
+    flex-direction: column;
+    width: calc(60% - var(--order-spacing));
+    margin-left: var(--order-spacing);
+
+    .title,
+    .sub-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #151515;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: -0.0125em;
+      margin-bottom: 24px;
+    }
+
+    label {
+      font-size: 14px;
+      line-height: 0.9;
+      margin-bottom: 10px;
+      display: block;
+      color: #151515;
+    }
+
+    input,
+    textarea,
+    select {
+      border: 1px solid #e3e3e3;
+      outline: none;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 10px 16px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: #151515;
+
+        &::placeholder {
+          transition: color 0.3s;
+          color: transparent;
+        }
+      }
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.breadcrumb {
+  padding: 10px 0;
+  margin-bottom: 20px;
+
+  &-container {
+    .home {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

@@ -7,12 +7,17 @@
 // load all component style
 @import '../components/agarwood-product-item/style.scss';
 @import '../components/not-found/style.scss';
+@import '../components/radio/style.scss';
+@import '../components/breadcrumb/style.scss';
+@import '../components/product-images-slider/style.scss';
 @import '../components/feedback-slider/style.scss';
 @import '../components/feedback-slider/feedback-item/style.scss';
 
 // load all pages style
 @import '../pages/home/style.scss';
-@import '../pages/checkout/style.scss';
+@import '../pages/cart/style.scss';
+@import '../pages/product-details/style.scss';
+@import '../pages/order/style.scss';
 
 // load all layouts style
 @import '../layouts/header/style.scss';

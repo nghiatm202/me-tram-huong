@@ -34,3 +34,21 @@ body {
   font-size: 14px;
   line-height: 1.6;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input[type='checkbox'] {
+  accent-color: #008000e1;
+
+  &:hover {
+    accent-color: #0f980fe1;
+  }
+}

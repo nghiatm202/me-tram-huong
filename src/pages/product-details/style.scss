@@ -1,0 +1,155 @@
+.product-details-page {
+  .banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 269px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .image-gallery-thumbnails .image-gallery-thumbnails-container {
+    text-align: left;
+  }
+
+  .image-gallery-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .image-gallery-image {
+    max-height: initial !important;
+    height: 518px;
+    object-fit: cover;
+  }
+
+  .image-gallery-thumbnail-image {
+    height: 70px;
+  }
+
+  .image-gallery-thumbnail.active,
+  .image-gallery-thumbnail:focus,
+  .image-gallery-thumbnail:hover {
+    border: 4px solid $golden-color;
+  }
+}
+
+.product-details {
+  &-container {
+    --product-details-spacing: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--product-details-spacing));
+  }
+
+  &-image {
+    width: calc(40% - var(--product-details-spacing));
+    margin-left: var(--product-details-spacing);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: calc(60% - var(--product-details-spacing));
+    margin-left: var(--product-details-spacing);
+
+    .title {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 37px;
+      transition: color 0.3s;
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      &:hover {
+        color: #70b335;
+      }
+    }
+
+    .rating-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+
+    .list {
+      margin: 25px 0;
+
+      .item {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+
+    .desc {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .price {
+      color: $golden-color;
+      font-weight: 700px;
+      font-size: 40px;
+    }
+
+    .button-box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      button {
+        padding: 10px 40px;
+        border-radius: 4px;
+        color: #151515;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          filter: brightness(104%);
+        }
+      }
+
+      .contact {
+        background-color: $golden-color;
+      }
+
+      .add-to-cart {
+        background-color: #ebebeb;
+      }
+    }
+  }
+}
+
+.related-products {
+  .title {
+    font-size: 25px;
+    color: $golden-color;
+    text-transform: uppercase;
+    margin: 28px 0;
+  }
+
+  .related-product-list {
+    margin-bottom: 80px;
+  }
+}

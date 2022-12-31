@@ -51,7 +51,7 @@ function Header() {
             </li>
           </ul>
 
-          <div class="header-search">
+          <div className="header-search">
             <form action="#">
               <input type="text" name="search" />
               <button type="submit">

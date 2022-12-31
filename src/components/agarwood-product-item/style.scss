@@ -1,0 +1,64 @@
+.agarwood-product-item {
+  --spacing: 30px;
+  --columns: 4;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .image {
+    overflow: hidden;
+    border-radius: 4px;
+
+    img {
+      height: 270px;
+      width: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+      transition: transform 0.4s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .info {
+    flex: 1;
+
+    .name {
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $golden-color;
+      }
+
+      a {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        transition: none;
+      }
+    }
+
+    .price {
+      text-align: center;
+      color: #ff0000;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  }
+}
