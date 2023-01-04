@@ -1,6 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
+interface CartItemInterface {
+  id: string | number;
+  count: number;
+}
+
+interface StateInterface {
+  isCartOpen: Boolean;
+  cart: CartItemInterface[];
+  items: CartItemInterface[];
+}
+
+const initialState: StateInterface = {
   isCartOpen: false,
   cart: [],
   items: [],
@@ -32,7 +43,7 @@ export const cartSlice = createSlice({
     },
 
     decreaseCount: (state, action) => {
-      state.cart = state.cart.map(item => {
+      state.cart = state.cart.map((item) => {
         if (item.id === action.payload.id && item.count > 1) {
           item.count--;
         }
